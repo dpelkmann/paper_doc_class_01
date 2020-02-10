@@ -51,28 +51,32 @@ for stack, name in [(stack_expert_a, 'a'), (stack_expert_b, 'b'), (stack_expert_
             stack.appendArticle(
                 article_stack.Article(
                     label = row['label_expert_a'],
-                    html_code=html_code
+                    html_code=html_code,
+                    newspaper_name=row['newspaper_name']
                 )
             )
         elif ((row['data_set'] == "expert") and (name == "b")):
             stack.appendArticle(
                 article_stack.Article(
                     label = row['label_expert_b'],
-                    html_code=html_code
+                    html_code=html_code,
+                    newspaper_name=row['newspaper_name']
                 )
             )
         elif ((row['data_set'] == "expert") and (name == "c")):
             stack.appendArticle(
                 article_stack.Article(
                     label = row['label_expert_c'],
-                    html_code=html_code
+                    html_code=html_code,
+                    newspaper_name=row['newspaper_name']
                 )
             )
         elif ((row['data_set'] == "council") and (name == "council")):
             stack.appendArticle(
                 article_stack.Article(
                     label = row['label_council'],
-                    html_code=html_code
+                    html_code=html_code,
+                    newspaper_name=row['newspaper_name']
                 )
             )
 
